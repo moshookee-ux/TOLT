@@ -1,0 +1,8 @@
+numpy>=1.26,<2.3
+scipy>=1.11
+pandas>=2
+pyarrow>=14
+scikit-learn>=1.4
+anndata>=0.10
+torch>=2.7
+threadpoolctl>=3

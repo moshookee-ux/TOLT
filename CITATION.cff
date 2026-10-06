@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Please cite this versioned software release when using TOLT."
+title: "TriOmics-Latent Transformer (TOLT)"
+type: software
+authors:
+  - family-names: Xiao
+    given-names: Jia
+version: 3.110.1
+date-released: 2026-10-07
+license: MIT
+repository-code: "https://github.com/moshookee-ux/TOLT"
+url: "https://github.com/moshookee-ux/TOLT/releases/tag/v3.110.1"

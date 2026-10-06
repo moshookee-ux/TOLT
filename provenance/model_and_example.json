@@ -1,0 +1,12 @@
+{
+  "model": "TriOmics-Latent Transformer (TOLT), TOLT-Base-110",
+  "version": "3.110.1",
+  "parameters": 30989097,
+  "tensor_count": 391,
+  "source_checkpoint_sha256": "774edecdfdd5aecbabb07f3dc41a2d1c36cf2b1414aefef41f32cbb480ef4ba1",
+  "distributed_weights_sha256": "d5392634350225b2bbcdc3f9a560ff0b4abf645d6f7f1ba77d729bd23196c082",
+  "export": "Same model tensors only; optimizer and machine-path metadata excluded",
+  "example": "GSE158013/GSM5123951; first 128 reference and first 16 query cells in the fixed split; query ADT excluded",
+  "example_scope": "End-to-end software demonstration, not the full-panel benchmark result",
+  "mapping": "Exact Ensembl ID and gene-name matches; positive GRCh38 half-open interval overlaps; frozen scaling"
+}

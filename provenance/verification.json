@@ -1,0 +1,31 @@
+{
+  "status": "pass",
+  "reference_cells": 128,
+  "query_cells": 16,
+  "target_channels": 46,
+  "all_mapped_tokens_identical": true,
+  "backbone_embedding_errors": {
+    "rna_ids": 0,
+    "rna_values": 0,
+    "rna_valid": 0,
+    "atac_ids": 0,
+    "atac_values": 0,
+    "atac_valid": 0,
+    "embedding_max_abs": 0.0
+  },
+  "query_ADT_not_distributed": true,
+  "end_to_end_demo_completed": true,
+  "portable_full_experiment_adapter_replays": {
+    "rna": {
+      "max_abs_error": 0.0,
+      "passed": true,
+      "tolerance": 3e-05
+    },
+    "rna_atac": {
+      "max_abs_error": 0.0,
+      "passed": true,
+      "tolerance": 3e-05
+    }
+  },
+  "software_demo_is_not_benchmark": true
+}

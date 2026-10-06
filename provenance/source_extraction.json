@@ -1,0 +1,46 @@
+[
+  {
+    "source": "src/triomics/data/geo_io.py",
+    "sha256": "3720075cdfdcbb47fd79eb084bf27b37aa0623c3e3d5439874d5ff270fc0674a",
+    "symbols": [
+      "_PEAK_RE",
+      "parse_peak"
+    ]
+  },
+  {
+    "source": "src/triomics/preprocessing/phase1.py",
+    "sha256": "525e58b77febcb4f157353f1eb026e1b832fa4db1cd96f8ab9fed5a9be1da844",
+    "symbols": [
+      "_GRCH38_INTERVAL_RE",
+      "normalize_grch38_contig",
+      "normalize_grch38_interval"
+    ]
+  },
+  {
+    "source": "src/triomics/preprocessing/cache.py",
+    "sha256": "d55d5b290ca35091f343d4fbec384d351fe0c3a2535efcb22918c02571176970",
+    "symbols": [
+      "_normalize_rna",
+      "_rna_tokens",
+      "_interval_lookup",
+      "_peak_mapping",
+      "_tfidf",
+      "_atac_tokens"
+    ]
+  },
+  {
+    "source": "src/triomics/evaluation/v105f_tea_external_transfer.py",
+    "sha256": "2d4c73c57e7c104eeb12e55c399713d8f240589b94b0f3e1752665700b4514d9",
+    "symbols": [
+      "exact_rna_indices",
+      "peak_overlap_projection"
+    ]
+  },
+  {
+    "source": "scripts/105f_run_v3_tea_external_transfer.py",
+    "sha256": "f83f1a2e6b9d7088420b1e9cd232767b95189c7fbf7cfa2a4eb6fc974099e688",
+    "symbols": [
+      "_transform_rna"
+    ]
+  }
+]
