@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "triomics-tolt"
 version = "4.5.0"
-description = "Sample-efficient cross-donor surface-proteome reconstruction and trimodal immunophenotyping with a frozen multi-omic foundation encoder."
+description = "TOLT: interpretable multi-omic foundation calibration for cross-donor surface-proteome reconstruction and immunogenomic discovery."
 readme = "README.md"
 license = {file = "LICENSE"}
 authors = [

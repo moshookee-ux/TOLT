@@ -1,21 +1,24 @@
 cff-version: 1.2.0
 message: "Please cite TOLT if you use this software, frozen pretrained weights, or calibration framework."
-title: "Sample-efficient cross-donor surface-proteome reconstruction and trimodal immunophenotyping with a frozen multi-omic foundation encoder"
+title: "TOLT: interpretable multi-omic foundation calibration for cross-donor surface-proteome reconstruction and immunogenomic discovery"
 type: software
 authors:
   - given-names: Xiao
     family-names: Jia
     affiliation: "School of Artificial Intelligence, The Chinese University of Hong Kong, Shenzhen"
     email: "xiaojia@link.cuhk.edu.cn"
+    orcid: "https://orcid.org/0009-0006-7711-4067"
 version: 4.5.0
 date-released: 2026-11-21
 license: MIT
 repository-code: "https://github.com/moshookee-ux/TOLT"
-url: "https://github.com/moshookee-ux/TOLT"
+url: "https://github.com/moshookee-ux/TOLT/releases/tag/v4.5.0"
 keywords:
+  - interpretable machine learning
   - single-cell multi-omics
-  - CITE-seq
-  - TEA-seq
-  - surface protein imputation
+  - surface proteome reconstruction
+  - feature attribution
+  - chromatin accessibility
   - foundation model calibration
-  - pediatric MIS-C
+  - uncertainty quantification
+  - immunophenotyping

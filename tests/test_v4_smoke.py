@@ -1,4 +1,4 @@
-"""Fast unit smoke tests for TOLT v4.1 core methods, compositional CLR, and 2-GMM gating."""
+"""Unit smoke tests for TOLT core methods, compositional CLR, and 2-GMM gating."""
 from __future__ import annotations
 
 import sys

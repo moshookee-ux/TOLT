@@ -1,12 +1,10 @@
 # TriOmics-Latent Transformer (TOLT)
 
-TOLT estimates surface-protein abundance in single cells from RNA or paired RNA and chromatin-accessibility measurements. A reference sample with measured proteins calibrates a frozen 30,989,097-parameter encoder to the target antibody panel.
+TOLT reconstructs single-cell surface-protein abundance from scRNA-seq or paired scRNA-seq and scATAC-seq measurements. A paired reference sample calibrates a frozen 30,989,097-parameter Perceiver encoder (`TOLT-Base-110`) to any target antibody panel via three-fold cross-fitted Cholesky ridge, residual, and probability-simplex regression, providing per-receptor pathway attribution, calibrated heteroscedastic uncertainty, and two-component Gaussian mixture (2-GMM) surface gates.
 
-Version **4.5.0** includes the calibration API, donor- and site-disjoint benchmarks, trimodal TEA-seq transfer, and comparisons with scGPT and Geneformer. The frozen TOLT-Base-110 encoder uses the weights distributed with v3.110.1.
+## Quickstart calibration example
 
-## Run the calibration example
-
-From the repository root, use Python 3.11 or 3.12 and run the following commands.
+Using Python 3.11 or 3.12 from the repository root:
 
 ```sh
 python -m pip install -e ".[dev]"
@@ -14,33 +12,33 @@ python examples/quickstart_fewshot_calibration.py
 python -m pytest tests/test_v4_smoke.py
 ```
 
-The example generates a synthetic reference and query, fits a protein-specific calibrator, and reports prediction correlations and a two-component gating threshold. It runs on CPU using the generated data. The public Python interface is defined in [src/triomics/inference.py](src/triomics/inference.py).
+`examples/quickstart_fewshot_calibration.py` simulates paired reference and unseen query cells on CPU, fits the cross-fitted Cholesky $\Delta^2$-simplex calibrator, and reports query correlations, simplex attribution weights $(w_{\mathrm{loc}}, w_{\mathrm{dir}}, w_{\mathrm{cor}})$, and the equal-posterior 2-GMM decision boundary. The public Python API is defined in [src/triomics/inference.py](src/triomics/inference.py).
 
-## Run the pretrained encoder
+## Run the pretrained `TOLT-Base-110` encoder
 
-Extract the [pretrained model archive](https://github.com/moshookee-ux/TOLT/releases/download/v3.110.1/TOLT-v3.110.1-model.zip) in the repository root so that the weights are at `model/tolt_base_110.pt`. Then run the bundled example.
+Download [`TOLT-v4.5.0-model.zip`](https://github.com/moshookee-ux/TOLT/releases/download/v4.5.0/TOLT-v4.5.0-model.zip) from the [v4.5.0 release](https://github.com/moshookee-ux/TOLT/releases/tag/v4.5.0) and extract it in the repository root so that the weights reside at `model/tolt_base_110.pt`. Then run:
 
 ```sh
 python demo.py
 ```
 
-The example maps RNA and ATAC counts from public TEA-seq data, fits the target panel on 128 reference cells, and writes predictions for 16 query cells to `results/demo/predicted_proteins.csv`. The model card describes the encoder and its training. The original release documents the input format and provides archive checksums. [Model card](MODEL_CARD.md) · [Input format](https://github.com/moshookee-ux/TOLT/blob/v3.110.1/README.md#supply-another-paired-reference-and-query) · [Weights and checksums](https://github.com/moshookee-ux/TOLT/releases/tag/v3.110.1)
+`demo.py` maps raw RNA and ATAC counts from public trimodal TEA-seq data onto TOLT's frozen GRCh38 vocabularies, extracts `TOLT-Base-110` embeddings, calibrates a 46-target panel on 128 reference cells, and writes query predictions to `results/demo/predicted_proteins.csv`. To run on custom paired data, pass `--data <dir>` containing `rna_counts.npz`, optional `atac_counts.npz`, and `features.npz` (`gene_ids`, `gene_names`, `peak_names`, `reference_cells`, `query_cells`, `reference_adt_counts`, `protein_names`, `cell_ids`). Architecture details and weight checksums are documented in [MODEL_CARD.md](MODEL_CARD.md).
 
-## Evaluate the study cohorts
+## Study benchmarks and clinical analyses
 
-The scripts evaluate bone marrow (GSE194122 and GSE128639), peripheral blood (GSE166489), and trimodal TEA-seq (GSE158013). The repository includes the numerical benchmark tables, run summaries, model configurations, and feature vocabularies. [Evaluation scripts](scripts/) · [Benchmark tables](results/tables/) · [Run summaries](results/receipts/)
+The numbered pipeline in [scripts/](scripts/) reproduces the donor-, site-, and well-disjoint evaluations across multi-site bone marrow (`GSE194122`), two-donor bone marrow (`GSE128639`), 18-sample pediatric MIS-C and $\alpha\beta$ TCR blood (`GSE166489`), and five-well trimodal TEA-seq (`GSE158013`), including head-to-head comparisons against `totalVI`, `sciPENN`, `scVAEIT`, `scLinear`, `Seurat-Anchor`, `scGPT`, and `Geneformer`. Numerical output tables and execution summaries are archived in [results/tables/](results/tables/) and [results/receipts/](results/receipts/).
 
-For file-backed analyses, set `TOLT_ASSETS_ROOT` to your data directory. It defaults to `data/assets/` in this checkout. The scripts read and write the following directories beneath that root.
+For file-backed cohort analyses, set `TOLT_ASSETS_ROOT` to your local data directory (defaulting to `data/assets/`):
 
 | Directory | Contents |
 | --- | --- |
-| `01_cohorts_raw/` | Cohort matrices and sample annotations |
-| `02_checkpoints/` | TOLT checkpoints for ablations and external model weights |
-| `03_embeddings/` | Embeddings used by the benchmark scripts |
-| `04_predictions/` | Predictions and reference splits for downstream analyses and figures |
+| `01_cohorts_raw/` | Public cohort matrices and sample annotations |
+| `02_checkpoints/` | TOLT ablation checkpoints and external foundation model weights |
+| `03_embeddings/` | Extracted cell embeddings used by benchmark scripts |
+| `04_predictions/` | Out-of-donor predictions and reference splits |
 
-The download script retrieves the listed GEO files for GSE166489 and GSE158013. Full benchmark runs also require the two preprocessed bone-marrow matrices, the remaining TEA-seq inputs, and the checkpoints and reference splits used by each comparison. The deep baselines use separate dependencies, including scvi-tools, sciPENN, and scVAEIT. The full pipeline was developed on Windows with CUDA. [Download manifest](scripts/01_download_public_cohorts.py) · [Asset paths](src/triomics/v4/paths.py) · [Cross-donor benchmarks](scripts/04_run_cross_donor_benchmarks.py)
+`scripts/01_download_public_cohorts.py` downloads the public GEO archives for `GSE166489` and `GSE158013`; deep generative baselines (`scvi-tools`, `sciPENN`, `scVAEIT`) use optional GPU environments.
 
 ## Citation and license
 
-The software and released TOLT model tensors use the MIT license. Source datasets and third-party models retain their respective terms. [Software citation](CITATION.cff) · [License](LICENSE)
+Source code and released `TOLT-Base-110` model weights are distributed under the [MIT License](LICENSE). Citation metadata is provided in [CITATION.cff](CITATION.cff). Public single-cell datasets and external baseline packages remain under their respective original licenses.

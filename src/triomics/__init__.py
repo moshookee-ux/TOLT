@@ -1,4 +1,4 @@
-"""TriOmics-Latent Transformer (TOLT) — v4.5 Flagship Package."""
+"""TriOmics-Latent Transformer (TOLT) package."""
 
 from triomics.inference import (
     TOLTPanelCalibrator,
