@@ -1,12 +1,21 @@
 cff-version: 1.2.0
-message: "Please cite this versioned software release when using TOLT."
-title: "TriOmics-Latent Transformer (TOLT)"
+message: "Please cite TOLT if you use this software, frozen pretrained weights, or calibration framework."
+title: "Sample-efficient cross-donor surface-proteome reconstruction and trimodal immunophenotyping with a frozen multi-omic foundation encoder"
 type: software
 authors:
-  - family-names: Xiao
-    given-names: Jia
-version: 3.110.1
-date-released: 2026-10-07
+  - given-names: Xiao
+    family-names: Jia
+    affiliation: "School of Artificial Intelligence, The Chinese University of Hong Kong, Shenzhen"
+    email: "xiaojia@link.cuhk.edu.cn"
+version: 4.5.0
+date-released: 2026-11-21
 license: MIT
 repository-code: "https://github.com/moshookee-ux/TOLT"
-url: "https://github.com/moshookee-ux/TOLT/releases/tag/v3.110.1"
+url: "https://github.com/moshookee-ux/TOLT"
+keywords:
+  - single-cell multi-omics
+  - CITE-seq
+  - TEA-seq
+  - surface protein imputation
+  - foundation model calibration
+  - pediatric MIS-C

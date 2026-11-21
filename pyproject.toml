@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "triomics-tolt"
+version = "4.5.0"
+description = "Sample-efficient cross-donor surface-proteome reconstruction and trimodal immunophenotyping with a frozen multi-omic foundation encoder."
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [
+  {name = "Xiao Jia", email = "xiaojia@link.cuhk.edu.cn"}
+]
+requires-python = ">=3.11,<3.13"
+dependencies = [
+  "anndata",
+  "einops",
+  "h5py",
+  "joblib",
+  "matplotlib",
+  "mudata==0.3.10",
+  "numpy<2.3",
+  "pandas",
+  "pyarrow",
+  "pyyaml",
+  "psutil",
+  "safetensors",
+  "scanpy",
+  "scikit-learn",
+  "scipy",
+  "seaborn",
+  "torch>=2.7",
+  "torchmetrics",
+  "tqdm",
+  "umap-learn",
+  "zarr<3",
+]
+
+[project.optional-dependencies]
+dev = ["jupyter-client", "nbformat", "pytest", "ruff==0.15.14"]
+
+[project.scripts]
+tolt-quickstart = "triomics.inference:quickstart_cli"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = ["releases"]

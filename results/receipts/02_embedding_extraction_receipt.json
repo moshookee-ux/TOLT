@@ -1,0 +1,51 @@
+{
+  "schema": "tolt.v4.embedding_extraction_receipt.v1",
+  "device": "cuda",
+  "gpu_name": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "torch_version": "2.11.0+cu128",
+  "total_elapsed_sec": 1229.81,
+  "gse166489_total_cells": 162777,
+  "gse158013_total_cells": 37745,
+  "throughput_summary": [
+    {
+      "cohort": "GSE194122_Unseen_BMMC",
+      "modality": "RNA",
+      "n_cells": 12949,
+      "mapped_features": 2040,
+      "tokenize_sec": 0.7217,
+      "gpu_inference_sec": 30.0001,
+      "peak_vram_mb": 2823.53,
+      "cells_per_sec": 431.6
+    },
+    {
+      "cohort": "GSE128639_BMMC_Stuart",
+      "modality": "RNA",
+      "n_cells": 33454,
+      "mapped_features": 1965,
+      "tokenize_sec": 0.9289,
+      "gpu_inference_sec": 17.0456,
+      "peak_vram_mb": 2823.03,
+      "cells_per_sec": 1962.6
+    },
+    {
+      "cohort": "GSE166489_All18_Samples",
+      "modality": "RNA",
+      "n_cells": 162777,
+      "mapped_features": 2032,
+      "tokenize_sec": 5.991,
+      "gpu_inference_sec": 158.991,
+      "peak_vram_mb": 2823.53,
+      "cells_per_sec": 1023.8
+    },
+    {
+      "cohort": "GSE158013_5Wells_TEAseq",
+      "modality": "RNA+ATAC",
+      "n_cells": 37745,
+      "mapped_features": 29069,
+      "tokenize_sec": 12.319,
+      "gpu_inference_sec": 58.36,
+      "peak_vram_mb": 2217.06,
+      "cells_per_sec": 646.8
+    }
+  ]
+}

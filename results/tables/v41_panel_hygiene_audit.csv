@@ -1,0 +1,6 @@
+sample_id,measured_CD8_vs_CD8a_pcc,predicted_CD8_vs_CD8a_pcc,measured_TCRgd_vs_TCRVg9_0582_pcc,measured_TCRgd_vs_TCRVg_0583_pcc,excised_IgGFc_vs_CD64_fc_binding_pcc
+A.HD1,0.9737,0.997,0.1694,0.2387,0.329
+A.HD2,0.9708,0.9955,0.1344,0.199,0.2821
+A.HD3,0.9596,0.994,0.1642,0.2138,0.3715
+P1.1,0.9579,0.9846,0.1143,0.2213,0.7
+P2.1,0.9694,0.9976,0.0889,0.1881,0.673

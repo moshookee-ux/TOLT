@@ -1,5 +1,14 @@
-model/*.pt
-results/
 __pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
 .venv/
-*.pyc
+.venv-scvaeit/
+build/
+dist/
+model/*.pt
+/data/assets/
+/data/repro_cache/
+/results/*
+!/results/tables/
+!/results/receipts/

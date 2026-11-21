@@ -1,0 +1,4 @@
+cohort,model,params_M,pretrain_cells_M,modalities,vocab_size,n_cells,mapped_genes,gpu_inference_sec,peak_vram_mb,cells_per_sec,tokenize_sec
+GSE194122_SteadyState,TOLT-Base-110,30.99,0.325,RNA+ATAC+ADT,2048,12949,2040,15.4521,2577.22,838.0,
+GSE194122_SteadyState,scGPT_human,50.8,33.0,RNA-only,60697,12949,12587,804.066,1865.37,16.1,2.434
+GSE194122_SteadyState,Geneformer_30M,10.29,30.0,RNA-only,25426,12949,12052,25.03,1516.62,517.3,1.582

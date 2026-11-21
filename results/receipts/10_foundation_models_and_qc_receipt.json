@@ -1,0 +1,10 @@
+{
+  "schema": "tolt.v42.foundation_and_supp_receipt.v1",
+  "device": "cuda",
+  "gpu_name": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "tolt_params": 30989097,
+  "scgpt_params": 50804225,
+  "geneformer_params": 10288722,
+  "atac_tokenize_w3_sec": 2.399,
+  "elapsed_sec": 206.12
+}

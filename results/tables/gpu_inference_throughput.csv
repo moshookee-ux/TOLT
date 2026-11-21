@@ -1,0 +1,5 @@
+cohort,modality,n_cells,mapped_features,tokenize_sec,gpu_inference_sec,peak_vram_mb,cells_per_sec
+GSE194122_Unseen_BMMC,RNA,12949,2040,0.7217,30.0001,2823.53,431.6
+GSE128639_BMMC_Stuart,RNA,33454,1965,0.9289,17.0456,2823.03,1962.6
+GSE166489_All18_Samples,RNA,162777,2032,5.991,158.991,2823.53,1023.8
+GSE158013_5Wells_TEAseq,RNA+ATAC,37745,29069,12.319,58.36,2217.06,646.8

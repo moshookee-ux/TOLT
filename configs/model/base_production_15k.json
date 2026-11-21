@@ -1,0 +1,131 @@
+{
+  "schema": "triomics.v3_110.base_continuation_config.v1",
+  "run": {
+    "run_id": "TOLT-Base-110-seed-29-production-15k",
+    "seed": 29
+  },
+  "ancestor": {
+    "candidate_id": "F01-balanced-128",
+    "checkpoint_sha256": "730676ef4df35da7995832e7a5eaa4bd2924c3f1379b4a79ee95aec2b8213748",
+    "tensor_count": 391,
+    "parameter_count": 30989097
+  },
+  "model": {
+    "rna_vocab_size": 2048,
+    "atac_vocab_size": 30000,
+    "adt_vocab_size": 210,
+    "rna_output_dim": 2048,
+    "atac_lsi_output_dim": 128,
+    "adt_output_dim": 210,
+    "local_d_model": 256,
+    "local_heads": 8,
+    "local_ffn_dim": 1024,
+    "rna_local_layers": 2,
+    "atac_local_layers": 2,
+    "adt_local_layers": 1,
+    "rna_latents": 48,
+    "atac_latents": 64,
+    "adt_latents": 24,
+    "fusion_d_model": 384,
+    "fusion_heads": 8,
+    "fusion_layers": 6,
+    "fusion_ffn_dim": 1536,
+    "decoder_hidden_dim": 384,
+    "dropout": 0.1,
+    "factorized_representation": true,
+    "heteroscedastic_decoders": true,
+    "cross_modal_decoder_adapters": false,
+    "atac_feature_semantics": false,
+    "enable_peak_auxiliary": true,
+    "task_conditioned_decoders": false
+  },
+  "objective": {
+    "missing_target_weight": 1.0,
+    "observed_target_weight": 0.35,
+    "huber_weight": 1.0,
+    "gaussian_nll_weight": 0.1,
+    "shared_alignment_weight": 0.05,
+    "topology_weight": 0.08,
+    "separation_weight": 0.01,
+    "supervised_contrastive_weight": 0.05,
+    "condition_weight": 0.0,
+    "peak_weight": 0.1,
+    "peak_positive_weight": 4.0,
+    "supervised_temperature": 0.1,
+    "hard_negative_margin": 0.05,
+    "huber_beta": 0.5
+  },
+  "candidates": [
+    {
+      "id": "F01-balanced-128",
+      "private_dim": 128,
+      "identity_dim": 128,
+      "modality_shared_dim": 128,
+      "factorized_pool_hidden_dim": 192,
+      "identity_weight": 0.15,
+      "identity_temperature": 0.07,
+      "cross_modal_decoder_adapters": false,
+      "atac_feature_semantics": false,
+      "panel_dropout": 0.15
+    }
+  ],
+  "training": {
+    "precision": "bf16",
+    "batch_size": 512,
+    "gradient_accumulation": 1,
+    "head_learning_rate": 2e-05,
+    "legacy_learning_rate": 1e-05,
+    "weight_decay": 0.01,
+    "gradient_clip_norm": 1.0,
+    "num_workers_per_lane": 4,
+    "prefetch_factor": 2,
+    "max_steps": 15000,
+    "warmup_steps": 500,
+    "minimum_lr_multiplier": 0.1,
+    "validation_steps": [
+      5000,
+      10000,
+      15000
+    ],
+    "resume_every_steps": 500,
+    "log_every_steps": 20,
+    "capacity_steps": 10,
+    "compile": false,
+    "compile_mode": "default"
+  },
+  "validation": {
+    "batch_size": 256,
+    "max_calibration_cells_per_lane": 4096,
+    "max_dogma_validation_cells": 2048
+  },
+  "peak_sampling": {
+    "max_positive_peaks_per_cell": 128,
+    "negative_ratio": 3
+  },
+  "selection": {
+    "recovery_weight": 0.45,
+    "retrieval_weight": 0.25,
+    "strict_weight": 0.15,
+    "biology_weight": 0.15,
+    "maximum_batch_proxy_regression": 0.03
+  },
+  "retention": {
+    "minimum_source_score_ratio": 0.98,
+    "minimum_missing_quality_ratio": 0.97,
+    "minimum_singleton_nonconstant_fraction": 0.01,
+    "nonconstant_epsilon": 1e-08
+  },
+  "fit_boundary": {
+    "fit_splits": [
+      "train"
+    ],
+    "selection_splits": [
+      "calibration"
+    ],
+    "forbidden_during_training": [
+      "test"
+    ],
+    "external_cohort_sampling": "cohort_balanced_round_robin",
+    "unmeasured_features": "explicit_mask_never_zero_target"
+  }
+}

@@ -1,0 +1,9 @@
+cohort,backbone,subspace,dim,donor_invariance_score,raw_donor_asw,lineage_bio_asw,fewshot_250_pcc_median,fewshot_250_mse
+GSE194122_CrossSite_BMMC,TOLT-Base-110,Global_CLS_384d,384,0.9314,0.0686,0.0531,0.522,0.2522
+GSE194122_CrossSite_BMMC,TOLT-Base-110,Identity_128d,128,0.9478,0.0522,0.0727,0.4714,0.2608
+GSE194122_CrossSite_BMMC,TOLT-Base-110,Modality_Shared_128d,128,0.9693,0.0307,-0.0657,0.3697,0.3081
+GSE194122_CrossSite_BMMC,TOLT-Base-110,Modality_Private_128d,128,0.9317,0.0683,-0.0269,0.4882,0.2596
+GSE194122_CrossSite_BMMC,Random-Init,Global_CLS_384d,384,0.9517,0.0483,-0.4773,0.114,0.4086
+GSE194122_CrossSite_BMMC,Random-Init,Identity_128d,128,0.9515,0.0485,-0.4739,0.0898,0.4111
+GSE194122_CrossSite_BMMC,Random-Init,Modality_Shared_128d,128,0.9524,0.0476,-0.4789,0.0747,0.4133
+GSE194122_CrossSite_BMMC,Random-Init,Modality_Private_128d,128,0.9521,0.0479,-0.4935,0.0793,0.4132

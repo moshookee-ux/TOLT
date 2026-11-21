@@ -1,0 +1,7 @@
+{
+  "schema": "tolt.v4.cross_donor_benchmarks_receipt.v1",
+  "elapsed_sec": 5456.3,
+  "learning_curve_rows": 242,
+  "gse166489_rows": 235,
+  "pareto_rows": 253
+}

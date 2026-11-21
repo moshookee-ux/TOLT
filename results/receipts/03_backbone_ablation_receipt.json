@@ -1,0 +1,6 @@
+{
+  "schema": "tolt.v4.backbone_ablation_receipt.v1",
+  "elapsed_sec": 367.61,
+  "n_perf_rows": 400,
+  "n_weight_rows": 125
+}

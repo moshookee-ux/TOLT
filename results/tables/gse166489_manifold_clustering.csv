@@ -1,0 +1,13 @@
+method,n_true_clusters,n_pred_clusters,leiden_ari,leiden_nmi,held_out_donor
+TOLT,19,18,0.6602,0.7075,A.HD3
+totalVI,19,17,0.6695,0.7242,A.HD3
+sciPENN,19,14,0.5233,0.6582,A.HD3
+scLinear,19,14,0.7007,0.7331,A.HD3
+Seurat-Anchor,19,18,0.6002,0.6623,A.HD3
+SVD-Ridge,19,14,0.7006,0.7332,A.HD3
+TOLT,18,15,0.4322,0.6666,P1.1
+totalVI,18,18,0.4671,0.6844,P1.1
+sciPENN,18,11,0.3948,0.6036,P1.1
+scLinear,18,14,0.4867,0.7031,P1.1
+Seurat-Anchor,18,21,0.3451,0.6036,P1.1
+SVD-Ridge,18,15,0.4844,0.7107,P1.1

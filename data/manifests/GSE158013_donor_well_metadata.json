@@ -1,0 +1,67 @@
+{
+  "schema": "triomics_external_confirmation_candidate",
+  "schema_version": 1,
+  "status": "retired_as_fresh_candidate_after_v3_105_target_evaluation",
+  "series_accession": "GSE158013",
+  "sample_accessions": [
+    "GSM4949911",
+    "GSM5123951",
+    "GSM5123952",
+    "GSM5123953",
+    "GSM5123954"
+  ],
+  "scientific_role": "historical_development_and_trimodal_scmib_surface_only_not_fresh_external",
+  "eligibility_before_download": {
+    "record_role": "historical_pre_access_snapshot_not_current_eligibility",
+    "organism": "Homo sapiens",
+    "tissue": "peripheral blood mononuclear cells",
+    "technology": "TEA-seq",
+    "modalities": ["RNA", "ATAC", "ADT"],
+    "genome_build": "GRCh38",
+    "independent_from_GSE166188": true,
+    "public_processed_files_available": true,
+    "payload_or_metric_accessed_before_freeze": false,
+    "DIG_STIM_accessed": false
+  },
+  "post_v3_105_audit": {
+    "evaluation_targets_opened": true,
+    "endpoint_selection_used_evaluation_results": true,
+    "evaluation_wells": ["GSM5123951", "GSM5123952", "GSM5123953", "GSM5123954"],
+    "evaluation_donor_ids": ["HMN200910"],
+    "independent_evaluation_donors": 1,
+    "fresh_v3_107_lockbox_eligible": false,
+    "allowed_v3_107_roles": [
+      "result-aware development",
+      "trimodal scorer and finite-scMIB development",
+      "descriptive single-donor external evidence with explicit limitation"
+    ],
+    "forbidden_claims": [
+      "fresh V3-107 lockbox",
+      "independent donor-level replication",
+      "four independent external donors"
+    ]
+  },
+  "frozen_use_policy": {
+    "training": false,
+    "fine_tuning": false,
+    "model_selection": false,
+    "threshold_or_calibration_fit": false,
+    "schema_only_adapter_development": "GSM4949911 only, if required, permanently excluding that sample from confirmation",
+    "final_confirmation": false,
+    "fallback": "Use only as result-aware development or as a descriptive one-donor tri-modal benchmark; never inflate the four wells to four donors."
+  },
+  "official_sources": [
+    "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE158013",
+    "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM4949911",
+    "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM5123951",
+    "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM5123952",
+    "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM5123953",
+    "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM5123954"
+  ],
+  "notes": [
+    "NCBI describes GSE158013 as simultaneous transcript, epitope, and chromatin-accessibility measurement in PBMCs.",
+    "NCBI lists four method-comparison TEA-seq wells GSM5123951-54 from donor HMN200910 and public processed fragment, metadata, feature-barcode H5, and ADT files.",
+    "The pre-access restriction above is historical: V3-105 subsequently opened evaluation targets and used evaluation results for endpoint selection.",
+    "As of the V3-107 audit this accession is permanently ineligible as a fresh lockbox."
+  ]
+}

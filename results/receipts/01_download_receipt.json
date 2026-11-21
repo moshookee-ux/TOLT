@@ -1,0 +1,476 @@
+{
+  "schema": "tolt.v4.cohort_download_receipt.v1",
+  "elapsed_sec": 211.93,
+  "file_count": 48,
+  "total_size_mb": 1131.79,
+  "files": [
+    {
+      "cohort": "GSE158013_TEA",
+      "sample_id": "X061_W1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4949nnn/GSM4949911/suppl/GSM4949911_X061-AP0C1W1_leukopak_perm-cells_tea_fulldepth_adt_counts.csv.gz",
+      "dest": "01_cohorts_raw/GSE158013_TEAseq/GSM4949911_X061-AP0C1W1_leukopak_perm-cells_tea_fulldepth_adt_counts.csv.gz",
+      "status": "downloaded",
+      "size_mb": 11.565,
+      "sha256": "e8acfbabf14fe93ebc55f4df8e99e502ec84f7cf732776d1ab069978e753b411"
+    },
+    {
+      "cohort": "GSE158013_TEA",
+      "sample_id": "X061_W1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4949nnn/GSM4949911/suppl/GSM4949911_X061-AP0C1W1_leukopak_perm-cells_tea_fulldepth_atac_filtered_metadata.csv.gz",
+      "dest": "01_cohorts_raw/GSE158013_TEAseq/GSM4949911_X061-AP0C1W1_leukopak_perm-cells_tea_fulldepth_atac_filtered_metadata.csv.gz",
+      "status": "downloaded",
+      "size_mb": 0.731,
+      "sha256": "2cc54e5aaf87f6ec60d188ce7284f48d2db2a91d75531ae293b9b33f411ef981"
+    },
+    {
+      "cohort": "GSE158013_TEA",
+      "sample_id": "X061_W1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4949nnn/GSM4949911/suppl/GSM4949911_X061-AP0C1W1_leukopak_perm-cells_tea_fulldepth_cellranger-arc_filtered_feature_bc_matrix.h5",
+      "dest": "01_cohorts_raw/GSE158013_TEAseq/GSM4949911_X061-AP0C1W1_leukopak_perm-cells_tea_fulldepth_cellranger-arc_filtered_feature_bc_matrix.h5",
+      "status": "downloaded",
+      "size_mb": 77.888,
+      "sha256": "e8649876729432c5121e878d667c0f811fce2d833034613c13769f8d54fcd7c4"
+    },
+    {
+      "cohort": "GSE158013_TEA",
+      "sample_id": "X066_W4",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5123nnn/GSM5123952/suppl/GSM5123952_X066-MP0C1W4_leukopak_perm-cells_tea_200M_atac_filtered_metadata.csv.gz",
+      "dest": "01_cohorts_raw/GSE158013_TEAseq/GSM5123952_X066-MP0C1W4_leukopak_perm-cells_tea_200M_atac_filtered_metadata.csv.gz",
+      "status": "downloaded",
+      "size_mb": 0.675,
+      "sha256": "4d74bccf7860cdbd1fce8f790135f70431844856bc1f7280eea647d1baa266bc"
+    },
+    {
+      "cohort": "GSE158013_TEA",
+      "sample_id": "X066_W4",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5123nnn/GSM5123952/suppl/GSM5123952_X066-MP0C1W4_leukopak_perm-cells_tea_200M_cellranger-arc_filtered_feature_bc_matrix.h5",
+      "dest": "01_cohorts_raw/GSE158013_TEAseq/GSM5123952_X066-MP0C1W4_leukopak_perm-cells_tea_200M_cellranger-arc_filtered_feature_bc_matrix.h5",
+      "status": "downloaded",
+      "size_mb": 62.366,
+      "sha256": "f1b6b714730981c0e979b95830875d1647865d859abcfe565d04b0cda1ba8dad"
+    },
+    {
+      "cohort": "GSE158013_TEA",
+      "sample_id": "X066_W4",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5123nnn/GSM5123952/suppl/GSM5123952_X066-MP0C1W4_leukopak_perm-cells_tea_48M_adt_counts.csv.gz",
+      "dest": "01_cohorts_raw/GSE158013_TEAseq/GSM5123952_X066-MP0C1W4_leukopak_perm-cells_tea_48M_adt_counts.csv.gz",
+      "status": "downloaded",
+      "size_mb": 9.669,
+      "sha256": "c52a6bc07f7986238d812a2b57e2f4ae4db9663e395740a272fccb6f765dc13a"
+    },
+    {
+      "cohort": "GSE158013_TEA",
+      "sample_id": "X066_W5",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5123nnn/GSM5123953/suppl/GSM5123953_X066-MP0C1W5_leukopak_perm-cells_tea_200M_atac_filtered_metadata.csv.gz",
+      "dest": "01_cohorts_raw/GSE158013_TEAseq/GSM5123953_X066-MP0C1W5_leukopak_perm-cells_tea_200M_atac_filtered_metadata.csv.gz",
+      "status": "downloaded",
+      "size_mb": 0.67,
+      "sha256": "816ab4918bee708a90e4956cd00674cd574baf4735867e051fdb97565afd310d"
+    },
+    {
+      "cohort": "GSE158013_TEA",
+      "sample_id": "X066_W5",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5123nnn/GSM5123953/suppl/GSM5123953_X066-MP0C1W5_leukopak_perm-cells_tea_200M_cellranger-arc_filtered_feature_bc_matrix.h5",
+      "dest": "01_cohorts_raw/GSE158013_TEAseq/GSM5123953_X066-MP0C1W5_leukopak_perm-cells_tea_200M_cellranger-arc_filtered_feature_bc_matrix.h5",
+      "status": "downloaded",
+      "size_mb": 60.989,
+      "sha256": "08339200fec39088f37e4980069184eb6910149b1cb2da597d68a466e1231ac9"
+    },
+    {
+      "cohort": "GSE158013_TEA",
+      "sample_id": "X066_W5",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5123nnn/GSM5123953/suppl/GSM5123953_X066-MP0C1W5_leukopak_perm-cells_tea_48M_adt_counts.csv.gz",
+      "dest": "01_cohorts_raw/GSE158013_TEAseq/GSM5123953_X066-MP0C1W5_leukopak_perm-cells_tea_48M_adt_counts.csv.gz",
+      "status": "downloaded",
+      "size_mb": 9.966,
+      "sha256": "dabadafb4e97d8b4c385cbd32b3bb636f2e78feb67ae7aac0206e6f4c315b7fd"
+    },
+    {
+      "cohort": "GSE158013_TEA",
+      "sample_id": "X066_W6",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5123nnn/GSM5123954/suppl/GSM5123954_X066-MP0C1W6_leukopak_perm-cells_tea_200M_atac_filtered_metadata.csv.gz",
+      "dest": "01_cohorts_raw/GSE158013_TEAseq/GSM5123954_X066-MP0C1W6_leukopak_perm-cells_tea_200M_atac_filtered_metadata.csv.gz",
+      "status": "downloaded",
+      "size_mb": 0.717,
+      "sha256": "173ebe9d317ab6f9513bc0cd8c021a1e92d6eec54d7934e275e3761bd6c60408"
+    },
+    {
+      "cohort": "GSE158013_TEA",
+      "sample_id": "X066_W6",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5123nnn/GSM5123954/suppl/GSM5123954_X066-MP0C1W6_leukopak_perm-cells_tea_200M_cellranger-arc_filtered_feature_bc_matrix.h5",
+      "dest": "01_cohorts_raw/GSE158013_TEAseq/GSM5123954_X066-MP0C1W6_leukopak_perm-cells_tea_200M_cellranger-arc_filtered_feature_bc_matrix.h5",
+      "status": "downloaded",
+      "size_mb": 62.93,
+      "sha256": "daa6060087aca2a5f9871386a6ea910a248056316c2beea540ea48d25cf04139"
+    },
+    {
+      "cohort": "GSE158013_TEA",
+      "sample_id": "X066_W6",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5123nnn/GSM5123954/suppl/GSM5123954_X066-MP0C1W6_leukopak_perm-cells_tea_48M_adt_counts.csv.gz",
+      "dest": "01_cohorts_raw/GSE158013_TEAseq/GSM5123954_X066-MP0C1W6_leukopak_perm-cells_tea_48M_adt_counts.csv.gz",
+      "status": "downloaded",
+      "size_mb": 9.332,
+      "sha256": "53d8c5309ed3b88e8e4c6419155a1dd9ec404f60865186b6d75c6827976a8b74"
+    },
+    {
+      "cohort": "GSE166489_CITE",
+      "sample_id": "A.HD1",
+      "condition": "Healthy",
+      "age_group": "Adult",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5073nnn/GSM5073070/suppl/GSM5073070_A.HD1_filtered_feature_bc_matrix.tar.gz",
+      "dest": "01_cohorts_raw/GSE166489_MISC/cite_seq/GSM5073070_A.HD1_filtered_feature_bc_matrix.tar.gz",
+      "status": "downloaded",
+      "size_mb": 57.466,
+      "sha256": "6c9c25532f97f293ab5da7953a561456b2f255121a7c7c67b1e698f8397e86f8"
+    },
+    {
+      "cohort": "GSE166489_CITE",
+      "sample_id": "A.HD2",
+      "condition": "Healthy",
+      "age_group": "Adult",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5073nnn/GSM5073071/suppl/GSM5073071_A.HD2_filtered_feature_bc_matrix.tar.gz",
+      "dest": "01_cohorts_raw/GSE166489_MISC/cite_seq/GSM5073071_A.HD2_filtered_feature_bc_matrix.tar.gz",
+      "status": "downloaded",
+      "size_mb": 58.659,
+      "sha256": "c4afb34b89ba6a0b83e974aaf5b044e62d92586dd3aff183c5a3b63d7b12c2f8"
+    },
+    {
+      "cohort": "GSE166489_CITE",
+      "sample_id": "A.HD3",
+      "condition": "Healthy",
+      "age_group": "Adult",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5073nnn/GSM5073072/suppl/GSM5073072_A.HD3_filtered_feature_bc_matrix.tar.gz",
+      "dest": "01_cohorts_raw/GSE166489_MISC/cite_seq/GSM5073072_A.HD3_filtered_feature_bc_matrix.tar.gz",
+      "status": "cached",
+      "size_mb": 71.853,
+      "sha256": "8ecb1d25634aba998c1c3e6d6026d71e502894e6fea894d4b4bc62d6d516525a"
+    },
+    {
+      "cohort": "GSE166489_CITE",
+      "sample_id": "P1.1",
+      "condition": "MIS-C_Severe",
+      "age_group": "Pediatric",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5073nnn/GSM5073055/suppl/GSM5073055_P1.1_filtered_feature_bc_matrix.tar.gz",
+      "dest": "01_cohorts_raw/GSE166489_MISC/cite_seq/GSM5073055_P1.1_filtered_feature_bc_matrix.tar.gz",
+      "status": "downloaded",
+      "size_mb": 41.959,
+      "sha256": "9f7b3b780a8b1e90366104fdaf7a5250e8f2908c52bedb4d0bf038aec32a8884"
+    },
+    {
+      "cohort": "GSE166489_CITE",
+      "sample_id": "P2.1",
+      "condition": "MIS-C_Severe",
+      "age_group": "Pediatric",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5073nnn/GSM5073056/suppl/GSM5073056_P2.1_filtered_feature_bc_matrix.tar.gz",
+      "dest": "01_cohorts_raw/GSE166489_MISC/cite_seq/GSM5073056_P2.1_filtered_feature_bc_matrix.tar.gz",
+      "status": "downloaded",
+      "size_mb": 36.544,
+      "sha256": "fd0e1f34a25fee1b37871d015008bc72269bd202a24a5365d42474fc54bccfc8"
+    },
+    {
+      "cohort": "GSE166489_GEX",
+      "sample_id": "C.HD1",
+      "condition": "Pediatric_Healthy",
+      "age_group": "Pediatric",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5073nnn/GSM5073064/suppl/GSM5073064_C.HD1_filtered_feature_bc_matrix.tar.gz",
+      "dest": "01_cohorts_raw/GSE166489_MISC/pediatric_gex/GSM5073064_C.HD1_filtered_feature_bc_matrix.tar.gz",
+      "status": "downloaded",
+      "size_mb": 50.31,
+      "sha256": "a2a79c77b391c8efc741f04958efea91ad49526c95fc3d4e3eae30dfe270fa22"
+    },
+    {
+      "cohort": "GSE166489_GEX",
+      "sample_id": "C.HD2",
+      "condition": "Pediatric_Healthy",
+      "age_group": "Pediatric",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5073nnn/GSM5073065/suppl/GSM5073065_C.HD2_filtered_feature_bc_matrix.tar.gz",
+      "dest": "01_cohorts_raw/GSE166489_MISC/pediatric_gex/GSM5073065_C.HD2_filtered_feature_bc_matrix.tar.gz",
+      "status": "downloaded",
+      "size_mb": 25.652,
+      "sha256": "cb3e30311f9257d1c22f8c666ff3f9ccc73dff013269781b21327ceb54d3906d"
+    },
+    {
+      "cohort": "GSE166489_GEX",
+      "sample_id": "C.HD3",
+      "condition": "Pediatric_Healthy",
+      "age_group": "Pediatric",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5073nnn/GSM5073066/suppl/GSM5073066_C.HD3_filtered_feature_bc_matrix.tar.gz",
+      "dest": "01_cohorts_raw/GSE166489_MISC/pediatric_gex/GSM5073066_C.HD3_filtered_feature_bc_matrix.tar.gz",
+      "status": "downloaded",
+      "size_mb": 51.125,
+      "sha256": "072a71561249f42022280e34b84052c43e17f1a8a6fe4d8ed9af9a56a1678fa3"
+    },
+    {
+      "cohort": "GSE166489_GEX",
+      "sample_id": "C.HD4",
+      "condition": "Pediatric_Healthy",
+      "age_group": "Pediatric",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5073nnn/GSM5073067/suppl/GSM5073067_C.HD4_filtered_feature_bc_matrix.tar.gz",
+      "dest": "01_cohorts_raw/GSE166489_MISC/pediatric_gex/GSM5073067_C.HD4_filtered_feature_bc_matrix.tar.gz",
+      "status": "downloaded",
+      "size_mb": 50.82,
+      "sha256": "43808a6f31884b1f9a3c338e58278a2de9063e4fe0b835ca494ab650048eb581"
+    },
+    {
+      "cohort": "GSE166489_GEX",
+      "sample_id": "C.HD5",
+      "condition": "Pediatric_Healthy",
+      "age_group": "Pediatric",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5073nnn/GSM5073068/suppl/GSM5073068_C.HD5_filtered_feature_bc_matrix.tar.gz",
+      "dest": "01_cohorts_raw/GSE166489_MISC/pediatric_gex/GSM5073068_C.HD5_filtered_feature_bc_matrix.tar.gz",
+      "status": "downloaded",
+      "size_mb": 47.812,
+      "sha256": "53e48a0c6b299e64564e3e1b5db001ae89b6a83db0d7114c7753083b6e82d9b1"
+    },
+    {
+      "cohort": "GSE166489_GEX",
+      "sample_id": "C.HD6",
+      "condition": "Pediatric_Healthy",
+      "age_group": "Pediatric",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5073nnn/GSM5073069/suppl/GSM5073069_C.HD6_filtered_feature_bc_matrix.tar.gz",
+      "dest": "01_cohorts_raw/GSE166489_MISC/pediatric_gex/GSM5073069_C.HD6_filtered_feature_bc_matrix.tar.gz",
+      "status": "downloaded",
+      "size_mb": 40.781,
+      "sha256": "eace9d52000489cde0680c478bd4f66f2705e7bafb9b36a429a07801ad45898f"
+    },
+    {
+      "cohort": "GSE166489_GEX",
+      "sample_id": "P3.1",
+      "condition": "MIS-C_Severe",
+      "age_group": "Pediatric",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5073nnn/GSM5073057/suppl/GSM5073057_P3.1_filtered_feature_bc_matrix.tar.gz",
+      "dest": "01_cohorts_raw/GSE166489_MISC/pediatric_gex/GSM5073057_P3.1_filtered_feature_bc_matrix.tar.gz",
+      "status": "downloaded",
+      "size_mb": 15.119,
+      "sha256": "407879cd94d6e76b3f68caf8f1b8c0f46fedc09820128415a04405b1405b9b58"
+    },
+    {
+      "cohort": "GSE166489_GEX",
+      "sample_id": "P3.2",
+      "condition": "MIS-C_Recovered",
+      "age_group": "Pediatric",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5073nnn/GSM5073062/suppl/GSM5073062_P3.2_filtered_feature_bc_matrix.tar.gz",
+      "dest": "01_cohorts_raw/GSE166489_MISC/pediatric_gex/GSM5073062_P3.2_filtered_feature_bc_matrix.tar.gz",
+      "status": "downloaded",
+      "size_mb": 49.478,
+      "sha256": "97d68ea2cb953b940676dd476b2ea17a85941158433ec39f05e0db1d5c9bd549"
+    },
+    {
+      "cohort": "GSE166489_GEX",
+      "sample_id": "P4.1",
+      "condition": "MIS-C_Moderate",
+      "age_group": "Pediatric",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5073nnn/GSM5073058/suppl/GSM5073058_P4.1_filtered_feature_bc_matrix.tar.gz",
+      "dest": "01_cohorts_raw/GSE166489_MISC/pediatric_gex/GSM5073058_P4.1_filtered_feature_bc_matrix.tar.gz",
+      "status": "downloaded",
+      "size_mb": 41.929,
+      "sha256": "8a184f0e568cdb57e45008ef2c0d41a271efb99cd0b8abdfeecc15282c11c3aa"
+    },
+    {
+      "cohort": "GSE166489_GEX",
+      "sample_id": "P4.2",
+      "condition": "MIS-C_Recovered",
+      "age_group": "Pediatric",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5073nnn/GSM5073063/suppl/GSM5073063_P4.2_filtered_feature_bc_matrix.tar.gz",
+      "dest": "01_cohorts_raw/GSE166489_MISC/pediatric_gex/GSM5073063_P4.2_filtered_feature_bc_matrix.tar.gz",
+      "status": "downloaded",
+      "size_mb": 55.343,
+      "sha256": "458066ad596641e273e8f2eb62be4d78796c791aaeb28c70ae2b1f57a77ccfe3"
+    },
+    {
+      "cohort": "GSE166489_GEX",
+      "sample_id": "P5.1",
+      "condition": "MIS-C_Moderate",
+      "age_group": "Pediatric",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5073nnn/GSM5073059/suppl/GSM5073059_P5.1_filtered_feature_bc_matrix.tar.gz",
+      "dest": "01_cohorts_raw/GSE166489_MISC/pediatric_gex/GSM5073059_P5.1_filtered_feature_bc_matrix.tar.gz",
+      "status": "downloaded",
+      "size_mb": 58.056,
+      "sha256": "83ff117136740cf777bcce085e5d5cc297613be7f01c963c14da2ad92efc4f9f"
+    },
+    {
+      "cohort": "GSE166489_GEX",
+      "sample_id": "P6.1",
+      "condition": "MIS-C_Severe",
+      "age_group": "Pediatric",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5073nnn/GSM5073060/suppl/GSM5073060_P6.1_filtered_feature_bc_matrix.tar.gz",
+      "dest": "01_cohorts_raw/GSE166489_MISC/pediatric_gex/GSM5073060_P6.1_filtered_feature_bc_matrix.tar.gz",
+      "status": "downloaded",
+      "size_mb": 48.932,
+      "sha256": "22f7a6640ce28fe67345c15c2aef350f3aba580d0d4874f3dc863ec11c7f113a"
+    },
+    {
+      "cohort": "GSE166489_GEX",
+      "sample_id": "P7.1",
+      "condition": "MIS-C_Severe",
+      "age_group": "Pediatric",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5073nnn/GSM5073061/suppl/GSM5073061_P7.1_filtered_feature_bc_matrix.tar.gz",
+      "dest": "01_cohorts_raw/GSE166489_MISC/pediatric_gex/GSM5073061_P7.1_filtered_feature_bc_matrix.tar.gz",
+      "status": "downloaded",
+      "size_mb": 15.576,
+      "sha256": "9877685ab643c5783f605d6b2dcfc7fb8b64e07ed21c164d6b7a53f5567dea25"
+    },
+    {
+      "cohort": "GSE166489_TCR",
+      "sample_id": "A.HD1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5073nnn/GSM5073088/suppl/GSM5073088_PBMC_A.HD1_Adult_healthy_donor_TCR_filtered_contig_annotations.csv.gz",
+      "dest": "01_cohorts_raw/GSE166489_MISC/tcr/GSM5073088_A.HD1_TCR.csv.gz",
+      "status": "downloaded",
+      "size_mb": 0.52,
+      "sha256": "6abbbb95f3dbf293649eb8c92c1e9c41225735db898f7e00dc697a064f590f08"
+    },
+    {
+      "cohort": "GSE166489_TCR",
+      "sample_id": "A.HD2",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5073nnn/GSM5073089/suppl/GSM5073089_PBMC_A.HD2_Adult_healthy_donor_TCR_filtered_contig_annotations.csv.gz",
+      "dest": "01_cohorts_raw/GSE166489_MISC/tcr/GSM5073089_A.HD2_TCR.csv.gz",
+      "status": "downloaded",
+      "size_mb": 0.567,
+      "sha256": "2dbc6f21f0a8aea32761868c7d8127e4b338409f7646d692b06d9718e2cdc28c"
+    },
+    {
+      "cohort": "GSE166489_TCR",
+      "sample_id": "A.HD3",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5073nnn/GSM5073090/suppl/GSM5073090_PBMC_A.HD3_Adult_healthy_donor_TCR_filtered_contig_annotations.csv.gz",
+      "dest": "01_cohorts_raw/GSE166489_MISC/tcr/GSM5073090_A.HD3_TCR.csv.gz",
+      "status": "downloaded",
+      "size_mb": 0.412,
+      "sha256": "8fcd61d8eaabc0a775f34ac0a651923a3e5ccfd8181dcbf37bd28d8891b20303"
+    },
+    {
+      "cohort": "GSE166489_TCR",
+      "sample_id": "C.HD1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5073nnn/GSM5073082/suppl/GSM5073082_PBMC_C.HD1_Pediatric_healthy_donor_TCR_filtered_contig_annotations.csv.gz",
+      "dest": "01_cohorts_raw/GSE166489_MISC/tcr/GSM5073082_C.HD1_TCR.csv.gz",
+      "status": "downloaded",
+      "size_mb": 0.539,
+      "sha256": "3ad210c395df42889b20e9fd81c88886d2b353b087cfca335084b6282b1a602c"
+    },
+    {
+      "cohort": "GSE166489_TCR",
+      "sample_id": "C.HD2",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5073nnn/GSM5073083/suppl/GSM5073083_PBMC_C.HD2_Pediatric_healthy_donor_TCR_filtered_contig_annotations.csv.gz",
+      "dest": "01_cohorts_raw/GSE166489_MISC/tcr/GSM5073083_C.HD2_TCR.csv.gz",
+      "status": "downloaded",
+      "size_mb": 0.237,
+      "sha256": "219462fe59bc0dd3b0a9c9d2199af656965db5fb2f2770c1b81cadb65b670344"
+    },
+    {
+      "cohort": "GSE166489_TCR",
+      "sample_id": "C.HD3",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5073nnn/GSM5073084/suppl/GSM5073084_PBMC_C.HD3_Pediatric_healthy_donor_TCR_filtered_contig_annotations.csv.gz",
+      "dest": "01_cohorts_raw/GSE166489_MISC/tcr/GSM5073084_C.HD3_TCR.csv.gz",
+      "status": "downloaded",
+      "size_mb": 0.424,
+      "sha256": "27e2c6ba7fbae7d819e6e2cf1a091b3b354311ffbc7c6c60597f49ddbe4f9e95"
+    },
+    {
+      "cohort": "GSE166489_TCR",
+      "sample_id": "C.HD4",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5073nnn/GSM5073085/suppl/GSM5073085_PBMC_C.HD4_Pediatric_healthy_donor_TCR_filtered_contig_annotations.csv.gz",
+      "dest": "01_cohorts_raw/GSE166489_MISC/tcr/GSM5073085_C.HD4_TCR.csv.gz",
+      "status": "downloaded",
+      "size_mb": 0.51,
+      "sha256": "a99e01c172eb987e954a95b8d8a1a776ff4b9db7cdb730f22f2855cd74e5c1a6"
+    },
+    {
+      "cohort": "GSE166489_TCR",
+      "sample_id": "C.HD5",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5073nnn/GSM5073086/suppl/GSM5073086_PBMC_C.HD5_Pediatric_healthy_donor_TCR_filtered_contig_annotations.csv.gz",
+      "dest": "01_cohorts_raw/GSE166489_MISC/tcr/GSM5073086_C.HD5_TCR.csv.gz",
+      "status": "downloaded",
+      "size_mb": 0.526,
+      "sha256": "a36b6d315afc1bbaafda12a3967d945ce8bc00bbcf9d9eeaeb90713b5e959892"
+    },
+    {
+      "cohort": "GSE166489_TCR",
+      "sample_id": "C.HD6",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5073nnn/GSM5073087/suppl/GSM5073087_PBMC_C.HD6_Pediatric_healthy_donor_TCR_filtered_contig_annotations.csv.gz",
+      "dest": "01_cohorts_raw/GSE166489_MISC/tcr/GSM5073087_C.HD6_TCR.csv.gz",
+      "status": "downloaded",
+      "size_mb": 0.271,
+      "sha256": "316e0cdc94a2ba0b935a9b055e3db88fce53e652a3579c30a8759b18fba4180f"
+    },
+    {
+      "cohort": "GSE166489_TCR",
+      "sample_id": "P1.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5073nnn/GSM5073073/suppl/GSM5073073_PBMC_P1.1_MIS-C_Severe_TCR_filtered_contig_annotations.csv.gz",
+      "dest": "01_cohorts_raw/GSE166489_MISC/tcr/GSM5073073_P1.1_TCR.csv.gz",
+      "status": "downloaded",
+      "size_mb": 0.14,
+      "sha256": "a0a6b375403e168dc2de906eaf1b7d4e5898b4221acedf959e13cc9665a8d8fc"
+    },
+    {
+      "cohort": "GSE166489_TCR",
+      "sample_id": "P2.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5073nnn/GSM5073074/suppl/GSM5073074_PBMC_P2.1_MIS-C_Severe_TCR_filtered_contig_annotations.csv.gz",
+      "dest": "01_cohorts_raw/GSE166489_MISC/tcr/GSM5073074_P2.1_TCR.csv.gz",
+      "status": "downloaded",
+      "size_mb": 0.229,
+      "sha256": "e432355d61ee6d7a3fe43e493c4f3fd329d4a59c42e50fcd6dde373ac455a122"
+    },
+    {
+      "cohort": "GSE166489_TCR",
+      "sample_id": "P3.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5073nnn/GSM5073075/suppl/GSM5073075_PBMC_P3.1_MIS-C_Severe_TCR_filtered_contig_annotations.csv.gz",
+      "dest": "01_cohorts_raw/GSE166489_MISC/tcr/GSM5073075_P3.1_TCR.csv.gz",
+      "status": "downloaded",
+      "size_mb": 0.092,
+      "sha256": "3532142a654aae98f901e9a44f4bee843bfedf55f9a6586f1c679b1cd3f34607"
+    },
+    {
+      "cohort": "GSE166489_TCR",
+      "sample_id": "P3.2",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5073nnn/GSM5073080/suppl/GSM5073080_PBMC_P3.2_MIS-C_Severe_Recovered_TCR_filtered_contig_annotations.csv.gz",
+      "dest": "01_cohorts_raw/GSE166489_MISC/tcr/GSM5073080_P3.2_TCR.csv.gz",
+      "status": "downloaded",
+      "size_mb": 0.497,
+      "sha256": "10e77ad7826a4bbd606a499586c138598925bab3723c2e7ba124f0fd13a82877"
+    },
+    {
+      "cohort": "GSE166489_TCR",
+      "sample_id": "P4.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5073nnn/GSM5073076/suppl/GSM5073076_PBMC_P4.1_MIS-C_Moderate_TCR_filtered_contig_annotations.csv.gz",
+      "dest": "01_cohorts_raw/GSE166489_MISC/tcr/GSM5073076_P4.1_TCR.csv.gz",
+      "status": "downloaded",
+      "size_mb": 0.307,
+      "sha256": "e4989551bf0c73d14bfbec1542bab75114cddc1c1fb13ceecbce449281045c71"
+    },
+    {
+      "cohort": "GSE166489_TCR",
+      "sample_id": "P4.2",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5073nnn/GSM5073081/suppl/GSM5073081_PBMC_P4.2_MIS-C_Moderate_Recovered_TCR_filtered_contig_annotations.csv.gz",
+      "dest": "01_cohorts_raw/GSE166489_MISC/tcr/GSM5073081_P4.2_TCR.csv.gz",
+      "status": "downloaded",
+      "size_mb": 0.545,
+      "sha256": "056d6e08bd370fa82aabe9347f0d264461e0505fef870dbc781a46a824531691"
+    },
+    {
+      "cohort": "GSE166489_TCR",
+      "sample_id": "P5.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5073nnn/GSM5073077/suppl/GSM5073077_PBMC_P5.1_MIS-C_Moderate_TCR_filtered_contig_annotations.csv.gz",
+      "dest": "01_cohorts_raw/GSE166489_MISC/tcr/GSM5073077_P5.1_TCR.csv.gz",
+      "status": "downloaded",
+      "size_mb": 0.678,
+      "sha256": "ddfd6b39fd3fc31940af49e6f2f384891f6e56aea97e4eb6990434d3fdad1da4"
+    },
+    {
+      "cohort": "GSE166489_TCR",
+      "sample_id": "P6.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5073nnn/GSM5073078/suppl/GSM5073078_PBMC_P6.1_MIS-C_Severe_TCR_filtered_contig_annotations.csv.gz",
+      "dest": "01_cohorts_raw/GSE166489_MISC/tcr/GSM5073078_P6.1_TCR.csv.gz",
+      "status": "downloaded",
+      "size_mb": 0.357,
+      "sha256": "22424745df18114187a70a29147a5f81f9261438c7d791ca2493b97e806c6a9b"
+    },
+    {
+      "cohort": "GSE166489_TCR",
+      "sample_id": "P7.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5073nnn/GSM5073079/suppl/GSM5073079_PBMC_P7.1_MIS-C_Severe_TCR_filtered_contig_annotations.csv.gz",
+      "dest": "01_cohorts_raw/GSE166489_MISC/tcr/GSM5073079_P7.1_TCR.csv.gz",
+      "status": "downloaded",
+      "size_mb": 0.029,
+      "sha256": "09294382051003f51c3cf07637965fc2ab1e026c1eb47032c5efd0e8de1a404d"
+    }
+  ]
+}

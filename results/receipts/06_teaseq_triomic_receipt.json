@@ -1,0 +1,7 @@
+{
+  "schema": "tolt.v4.teaseq_triomic_receipt.v1",
+  "elapsed_sec": 364.93,
+  "summary_rows": 143,
+  "cross_donor_X066W3_to_X061W1_atac_improved_channels": "35/45",
+  "cross_donor_atac_wilcoxon_p": 9.662837265194536e-06
+}

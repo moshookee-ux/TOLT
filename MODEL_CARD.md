@@ -1,6 +1,6 @@
 # TOLT-Base-110
 
-**Developer:** Jia Xiao. **Model:** TriOmics-Latent Transformer, originally developed in this study.
+**Developer:** Xiao Jia. **Model:** TriOmics-Latent Transformer, originally developed in this study.
 
 - RNA / ATAC / ADT latent arrays: 48 / 64 / 24 tokens plus a cell token.
 - Six shared fusion layers, width 384; 30,989,097 parameters.

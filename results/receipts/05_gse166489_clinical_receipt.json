@@ -1,0 +1,33 @@
+{
+  "schema": "tolt.v4.gse166489_clinical_receipt.v1",
+  "elapsed_sec": 190.34,
+  "age_matched_pediatric_stats": {
+    "pred_mono_CD169_mean": {
+      "pediatric_acute_misc_mean": 0.1117,
+      "pediatric_healthy_mean": 0.1218,
+      "mannwhitney_p": 0.03805333118374768
+    },
+    "pred_mono_CD64_mean": {
+      "pediatric_acute_misc_mean": 0.8459,
+      "pediatric_healthy_mean": 0.7212,
+      "mannwhitney_p": 0.002331002331002331
+    },
+    "pred_mono_HLADR_mean": {
+      "pediatric_acute_misc_mean": 1.1433,
+      "pediatric_healthy_mean": 1.4015,
+      "mannwhitney_p": 0.022144522144522144
+    },
+    "pred_tcell_CD38_mean": {
+      "pediatric_acute_misc_mean": 0.5716,
+      "pediatric_healthy_mean": 0.5805,
+      "mannwhitney_p": 0.830094265465244
+    },
+    "pred_tcell_PD1_mean": {
+      "pediatric_acute_misc_mean": 0.8947,
+      "pediatric_healthy_mean": 0.8382,
+      "mannwhitney_p": 0.03496503496503496
+    }
+  },
+  "n_donors_analyzed": 18,
+  "n_tcr_strata_rows": 36
+}
